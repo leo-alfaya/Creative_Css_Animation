@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>s</li>
+        <li>m</li>
+        <li>o</li>
+        <li>k</li>
+        <li>y</li>
+    </ul>    
+</body>
+
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3b3b3b;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+
+    ul li {
+        font-size: 100px;
+        font-weight: bold;
+        letter-spacing: 10px;
+        color: white;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: 2s;
+    }
+
+    ul li:nth-child(1) {
+        transition-delay: 0;
+    }
+
+    ul li:nth-child(2) {
+        transition-delay: 0.4s;
+    }
+
+    ul li:nth-child(3) {
+        transition-delay: 0.8s;
+    }
+
+    ul li:nth-child(4) {
+        transition-delay: 1.2s;
+    }
+
+    ul li:nth-child(5) {
+        transition-delay: 1.6s;
+    }
+
+    ul:hover li {
+        opacity: 0;
+        transform: rotate(45deg) translateY(-200px);
+        filter: blur(20px);
+    }
+
+</style>
+
+</html>
