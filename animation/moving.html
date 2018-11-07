@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rect"></div>
+</body>
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .rect {
+        width: 100px;
+        height: 100px;
+        background-color: #3d3d3d;
+        animation-name: moving;
+        animation-duration: 3s;        
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes moving {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(1000px); }
+        100% { transform: translate(1000px, 500px); }
+    }
+</style>
+</html>
